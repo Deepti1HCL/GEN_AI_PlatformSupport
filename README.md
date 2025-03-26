@@ -19,7 +19,7 @@ Tech Stack
 
 Team
 
-🎯 ##Introduction
+🎯 ## Introduction
 
 This project implements a chatbot using Hugging Face embeddings and integrates it with Jira to retrieve relevant ticket information. The indexed Jira data is stored in a Chroma vector database for efficient retrieval based on similarity scores.
 
