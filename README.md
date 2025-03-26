@@ -72,7 +72,7 @@ cd <repo_name>
 
 Install dependencies
 
-pip install requests llama-index langchain chromadb transformers
+pip install langchain faiss-cpu langchain_openai langchain_chroma langchain-community llama-index-embeddings-huggingface llama_index streamlit llama-index-llms-gemini llama-index-llms-google-genai langtrace-python-sdk langchain-google-genai llama-index-readers-jira jira
 
 Update the Jira credentials in the script:
 
