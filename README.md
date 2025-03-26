@@ -1,7 +1,9 @@
+##GENAI_PlatformSupport
+
 📌 Table of Contents
 
--[Introduction](#introduction)
-Introduction [#Introduction]
+
+Introduction
 
 Demo
 
@@ -29,11 +31,11 @@ This project implements a chatbot using Hugging Face embeddings and integrates i
 
 
 
-💡 Inspiration
+💡 ## Inspiration
 
 The need to efficiently retrieve Jira ticket information inspired this project. Managing and searching through Jira tickets manually can be time-consuming, so this chatbot automates the retrieval process using AI-based embeddings.
 
-⚙️ What It Does
+⚙️ ## What It Does
 
 Fetches Jira ticket data using JiraReader
 
@@ -43,7 +45,7 @@ Stores indexed Jira data using ChromaDB
 
 Retrieves relevant information using similarity-based search
 
-🛠️ How We Built It
+🛠️ ## How We Built It
 
 Used JiraReader to fetch Jira data
 
@@ -53,7 +55,7 @@ Indexed the documents using ChromaDB
 
 Integrated HuggingFaceEmbeddings for similarity-based retrieval
 
-🚧 Challenges We Faced
+🚧 ## Challenges We Faced
 
 Ensuring correct Jira API integration and authentication
 
@@ -61,7 +63,7 @@ Optimizing the similarity threshold for effective retrieval
 
 Managing and storing large volumes of Jira ticket data efficiently
 
-🏃 How to Run
+🏃 ## How to Run
 
 Clone the repository
 
@@ -86,7 +88,7 @@ Query the retriever:
 
 retriever.invoke("DB issue")
 
-🏗️ Tech Stack
+🏗️ ## Tech Stack
 
 🔹 Backend: Python
 
