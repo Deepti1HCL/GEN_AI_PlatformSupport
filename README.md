@@ -1,6 +1,6 @@
 📌 Table of Contents
 
-Introduction
+Introduction [#Introduction]
 
 Demo
 
@@ -94,5 +94,5 @@ retriever.invoke("DB issue")
 🔹 API Integration: Jira API
 
 👥 Team
+Pilot-AI
 
-Your Name - GitHub | LinkedIn
