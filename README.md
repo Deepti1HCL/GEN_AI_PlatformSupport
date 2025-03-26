@@ -96,6 +96,10 @@ retriever.invoke("DB issue")
 
 🔹 API Integration: Jira API
 
+🏗️ Future works
+We can use **LLAMA Confluence reader** to fetch data from confluence
+Possible to create Property Graph from all the endpoints to collect Upstream and Downstream
+
 👥 Team
 Pilot-AI
 
