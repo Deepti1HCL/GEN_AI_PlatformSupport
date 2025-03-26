@@ -1,60 +1,98 @@
-# 🚀 Project Name
+📌 Table of Contents
 
-## 📌 Table of Contents
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Inspiration](#inspiration)
-- [What It Does](#what-it-does)
-- [How We Built It](#how-we-built-it)
-- [Challenges We Faced](#challenges-we-faced)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Team](#team)
+Introduction
 
----
+Demo
 
-## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+Inspiration
 
-## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
+What It Does
 
-![Screenshot 1](link-to-image)
+How We Built It
 
-## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+Challenges We Faced
 
-## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+How to Run
 
-## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+Tech Stack
 
-## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+Team
 
-## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+🎯 Introduction
 
-## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+This project implements a chatbot using Hugging Face embeddings and integrates it with Jira to retrieve relevant ticket information. The indexed Jira data is stored in a Chroma vector database for efficient retrieval based on similarity scores.
 
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+🎥 Demo
+
+🔗 Live Demo (if applicable)📹 Video Demo (if applicable)🖼️ Screenshots:
+
+
+
+💡 Inspiration
+
+The need to efficiently retrieve Jira ticket information inspired this project. Managing and searching through Jira tickets manually can be time-consuming, so this chatbot automates the retrieval process using AI-based embeddings.
+
+⚙️ What It Does
+
+Fetches Jira ticket data using JiraReader
+
+Converts Jira tickets into LangChain document format
+
+Stores indexed Jira data using ChromaDB
+
+Retrieves relevant information using similarity-based search
+
+🛠️ How We Built It
+
+Used JiraReader to fetch Jira data
+
+Converted the data into LangChain document format
+
+Indexed the documents using ChromaDB
+
+Integrated HuggingFaceEmbeddings for similarity-based retrieval
+
+🚧 Challenges We Faced
+
+Ensuring correct Jira API integration and authentication
+
+Optimizing the similarity threshold for effective retrieval
+
+Managing and storing large volumes of Jira ticket data efficiently
+
+🏃 How to Run
+
+Clone the repository
+
+git clone <repo_url>
+cd <repo_name>
+
+Install dependencies
+
+pip install requests llama-index langchain chromadb transformers
+
+Update the Jira credentials in the script:
+
+JIRA_BASE_URL = "deeptibbdit.atlassian.net"
+JIRA_EMAIL = "deepti.bbdit@gmail.com"
+JIRA_API_TOKEN = "Your_Jira_API_Token"
+
+Run the script to fetch and index Jira data:
+
+python chatbot.py
+
+Query the retriever:
+
+retriever.invoke("DB issue")
+
+🏗️ Tech Stack
+
+🔹 Backend: Python
+
+🔹 Libraries: LangChain, ChromaDB, Hugging Face Transformers
+
+🔹 API Integration: Jira API
+
+👥 Team
+
+Your Name - GitHub | LinkedIn
